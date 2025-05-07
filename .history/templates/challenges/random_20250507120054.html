@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="fade-in">
+        <h2>{{ challenge.title }}</h2>
+        <p>{{ challenge.description }}</p>
+
+        <from method="post" action="{% url 'comlete_challenge' challenge.id %}">
+            
